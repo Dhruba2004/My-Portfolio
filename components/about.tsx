@@ -40,7 +40,7 @@ export default function About() {
         I am also Interested in <span className="font-bold">Cloud Computing , DevOps,</span> and a lot other fields
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
+        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
         video games, watching movies, and playing with my friends.
       </p>
     </motion.section>
