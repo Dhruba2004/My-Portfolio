@@ -78,14 +78,14 @@ export const educationData = [
 
 export const projectsData = [
   {
-    title: "DrumKit",
+    title: "Drum Kit",
     description:
       "I made this to recall my javascript knowledge",
     tags: ["HTML",'CSS','JS'],
     imageUrl: dicegameImg,
   },
   {
-    title: "DiceGame",
+    title: "Dice Game",
     description:
       "Made just for fun :)",
     tags: ["HTML","CSS","JS"],
