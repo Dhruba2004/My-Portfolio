@@ -70,7 +70,7 @@ export default function Intro() {
           Hey Devs, I&apos;m {""}{" "}
           <span className="font-bold">Dhruba Dutta Banik</span>{" "}
         </span>
-        <Typewriter
+        <Typewriter 
           options={{
             strings: typestrings,
             autoStart: true,

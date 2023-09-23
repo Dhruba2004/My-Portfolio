@@ -1,5 +1,7 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
+import dicegameImg from "@/public/images/dicegame.png";
+import drumkitImg from "@/public/images/drumkit.png";
 export const links = [
   {
     name: "Home",
@@ -71,5 +73,22 @@ export const educationData = [
       " Currently on the path of becoming a software engineer and learn new technologies everyday.",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - present",
+  },
+] as const;
+
+export const projectsData = [
+  {
+    title: "DrumKit",
+    description:
+      "I made this to recall my javascript knowledge",
+    tags: ["HTML",'CSS','JS'],
+    imageUrl: dicegameImg,
+  },
+  {
+    title: "DiceGame",
+    description:
+      "Made just for fun :)",
+    tags: ["HTML","CSS","JS"],
+    imageUrl: drumkitImg,
   },
 ] as const;
