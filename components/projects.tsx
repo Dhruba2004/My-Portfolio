@@ -1,3 +1,4 @@
+"use client";
 import { projectsData } from "@/lib/data";
 import React from "react";
 import SectionHeading from "./section-heading";
