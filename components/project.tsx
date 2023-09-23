@@ -1,7 +1,7 @@
 "use client";
 import { projectsData } from "@/lib/data";
 import { useRef } from "react";
-import { useScroll, motion } from "framer-motion";
+import { useScroll, motion ,useTransform } from "framer-motion";
 import Image from "next/image";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -17,12 +17,14 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <motion.section
       ref={ref}
       style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
+        scale: scaleProgess,
+        opacity: opacityProgess,
       }}
       className=" group bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 hover:bg-gray-200 transition-all"
     >
